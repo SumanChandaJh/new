@@ -1,0 +1,16 @@
+{
+	"Group_Passcode_Case": {
+		"First_Name": "JUDITH",
+		"caseSubject": "Passcode Request for 10343528",
+		"caseOrigin": "Web",
+		"caseSubStatus": "Ready to be Pulled",
+		"Last_Name": "RASMUSSEN",
+		"caseStatus": "In Progress",
+		"Coverage_Id": "10343528",
+		"caseRecordType": "LTC Passcode Request",
+		"DateofBirth": "12\/25\/1950",
+		"caseType": "Group LTC",
+		"caseReason": "",
+		"casePriority": "Medium"
+	}
+}

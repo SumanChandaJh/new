@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Run Test" parallel="tests" verbose="1"
+	configfailurepolicy="continue" thread-count="2">
+
+	<test name="Smoke Test" annotations="JDK" preserve-order="true">
+		<classes>
+			<class name="runners.TestRunner_Smoke" />
+		</classes>
+	</test>
+</suite>
+
