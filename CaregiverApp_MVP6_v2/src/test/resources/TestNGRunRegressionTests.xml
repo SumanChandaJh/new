@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Run Test Cukes" parallel="tests" verbose="1"
+	configfailurepolicy="continue" thread-count="2">
+
+	<listeners>
+		<!-- This TestNG listener takes care of setting up and tearing down the 
+			WebDriver, and it also changes test names in the final TestNG HTML report. -->
+		<listener class-name="com.CareGiver.supportLibraries.WebDriverListener" />
+	</listeners>
+
+	<!-- Possible Parameters and Values -->
+	<!-- ExecutionMode = LOCAL,MOBILE,PERFECTO,SEETEST,MINT,SAUCELABS -->
+	<!-- MobileExecutionPlatform = ANDROID, IOS, WEB_ANDROID, WEB_IOS -->
+	<!-- BrowserName = CHROME,FIREFOX,INTERNET_EXPLORER -->
+	<!-- DeviceName = "Please give the respective deviceName/UDID" OR ManufacturerName 
+		= Apple etc., ModelName = iPhone 7etc., -->
+	<!-- BrowserVersion ="" (Applicable Only if ExecutionMode is REMOTE or SAUCELABS) -->
+	<!-- Platform =WINDOWS etc., (Applicable Only if ExecutionMode is REMOTE 
+		or SAUCELABS)- -->
+
+
+
+	<!-- SAMSUNG GALAXY S9+ -->
+
+	<test name="ANDROID Regression">
+		<parameter name="ExecutionMode" value="PERFECTO" />
+		<parameter name="MobileExecutionPlatform" value="ANDROID" />
+		<parameter name="DeviceName" value="3357593255473098" />
+		<parameter name="ManufacturerName" value="SAMSUNG" />
+		<classes>
+			<class name="com.CareGiver.TestNGrunners.RunCucumberTests_Regression" />
+		</classes>
+	</test>
+
+
+
+	<!-- IPHONE XS IOS -->
+
+	<!-- <test name="IOS Smoke"> <parameter name="ExecutionMode" value="PERFECTO" 
+		/> <parameter name="MobileExecutionPlatform" value="IOS"></parameter> <parameter 
+		name="DeviceName" value="00008020-001B38290A50003A" /> <parameter name="ManufacturerName" 
+		value="APPLE" /> <classes> <class name="com.CareGiver.TestNGrunners.RunCucumberTests_Smoke" 
+		/> </classes> </test> -->
+
+
+
+
+
+</suite>
